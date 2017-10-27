@@ -1,8 +1,75 @@
 <html>
   <head>
-    <title> Becky Bell </title>
+    <script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.15.full.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=42">
+    <script src="datasets/dataGoogle.js"></script>
+    <script src="datasets/dataFB.js"></script>
+    <script src="datasets/dataSexism.js"></script>
+    <script src="datasets/dataTechnology.js"></script>
+    <title> MAS.S70: Becky Bell </title>
   </head>
   <body>
-    <h1> Becky Bell </h1>
+    <h1 class="main-title"> How much has the tech industry influenced the conversation around sexism?</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7 viz-component">
+          <div id="tech-sexism" class="center"></div>
+        </div>
+        <div class="col-lg-5 viz-caption">
+          <p>
+            What fraction of Guardian news articles that contain the word <b>sexism</b> also mention <b>technology</b>?
+          </p>
+          <p>
+            How has this percentage changed over time?
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 viz-component">
+          <div id="facebook-sexism" class="center"></div>
+        </div>
+        <div class="col-lg-5 viz-caption">
+          <p>
+            What fraction of Guardian news articles that contain the word <b>sexism</b> also mention <b>facebook</b>?
+          </p>
+          <p>
+            How has this percentage changed over time?
+          </p>
+          <br>
+          <br>
+          <hr>
+          <p>
+            <i>Note that it is unclear how many of these mentions refer to <a href="https://www.theguardian.com/technology/2016/may/17/facebook-trending-news-team-curators-toxic-work-environment">company culture</a> vs. <a href="https://www.theguardian.com/commentisfree/2013/apr/18/facebook-big-misogyny-problem">use of the product itself</a>.</i>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 viz-component">
+          <div id="google-sexism" class="center"></div>
+        </div>
+        <div class="col-lg-5 viz-caption">
+          <p>
+            What fraction of Guardian news articles that contain the word <b>sexism</b> also mention <b>google</b>?
+          </p>
+          <p>
+            How has this percentage changed over time?
+          </p>
+          <br>
+          <br>
+          <hr>
+          <p>
+            <i>Note that it is unclear how many of these mentions refer to the <a href="https://www.theguardian.com/technology/2017/aug/08/google-women-discrimination-class-action-lawsuit">company culture</a> vs. <a href=https://www.theguardian.com/technology/2016/dec/05/google-alters-search-autocomplete-remove-are-jews-evil-suggestion>use of the product itself</a>.</i>
+          </p>
+          <p>
+            <i>Also, the co-occurence of these terms <a href="https://www.theguardian.com/technology/2016/may/10/female-emojis-google-equality">does not necessarily imply</a> a negative article.</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="viz.js"></script>
   </body>
 </html>
